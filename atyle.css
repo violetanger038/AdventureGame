@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(74, 83, 91);
+    image-rendering: pixelated;
+
+}
+.gameBorder{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-image: linear-gradient(blue,violet);
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 70vh;
+    position: relative;
+    top: 0px;
+}
+#gameCanvas{
+    width: 78vw;
+    height: 60vh;
+    margin: 10px;
+    background-color: transparent;
+}
+h1{
+ font-family:  "Audiowide", sans-serif;
+ font-size: 100px;
+ color: azure;
+}
+#title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imageContain{
+    width: 78vw;
+    height: 68vh;
+    margin: 10px;
+    background-image:url(dark-mysterious.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#gameInput{
+    width: 78vw;
+    height: 5vh;
+    z-index: 5;
+    position: relative;
+    top:-20vh;
+    background-color: rgba(25, 1, 42, 0.841);
+    font-size: 5vh;
+    font-family:"Audiowide", sans-serif; 
+    color: azure;
+}
+#gameOutput{
+    width: 78vw;
+    height: 20vh;
+    z-index: 5;
+    position: relative;
+    top:-20vh;
+    background-color: rgba(25, 1, 42, 0.84);
+    font-family: "Audiowide", sans-serif;
+    font-size: 2vh;
+    color: azure;
+}
