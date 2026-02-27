@@ -1,3 +1,5 @@
+// importing dialogue
+import { Act1 } from "./script";
 // capture input
 function captureInput(x, y, I, scpt) {
     return new Promise((resolve) => {
@@ -28,6 +30,8 @@ async function runGame() {
     let o = "Start";
     let g = "laugh";
     let f = "something";
+    let choice =" "
+    let frame = 0
 
     document.getElementById('outputArea').innerHTML = t;
 
@@ -39,49 +43,62 @@ async function runGame() {
         }
     }
     // Act 1
-    for (let i = 0; i = 5; i++) {
+    choice =await captureInput(g,t,o,null)
+    for (i = 0; i<=3;i++)   
         switch (i) {
             case 0:
-               choice = await captureInput(g,t,o,null);
-               if (choice == false){
-                await captureInput(null, null, null,"wrong")
-                i++
-               }
+                await captureInput(null,null,null,f)
+                choice=await captureInput(null,null,o,null)
+                if (choice ==false){
+                    i++
+                }
                 break;
             case 1:
-               choice = await captureInput(g,t,o,null);
-               if (choice == false){
-                await captureInput(null, null, null,"wrong")
-                i++
-               }
+                await captureInput(null,null,null,f)
+                choice=await captureInput(null,null,o,null)
+                if (choice ==false){
+                    i++
+                }
                 break;
             case 2:
-               choice = await captureInput(g,t,o,null);
-               if (choice == false){
-                await captureInput(null, null, null,"wrong")
-                i++
-               }
+                await captureInput(null,null,null,f)
+                choice=await captureInput(null,null,o,null)
+                if (choice ==false){
+                    i++
+                }
                 break;
             case 3:
-               choice = await captureInput(g,t,o,null);
-               if (choice == false){
-                await captureInput(null, null, null,"wrong")
-                i++
-               }
+                await captureInput(null,null,null,f)
+                choice=await captureInput(null,null,o,null)
+                if (choice ==false){
+                    i++
+                }
                 break;
             case 4:
-               choice = await captureInput(g,t,o,null);
-               if (choice == false){
-                await captureInput(null, null, null,"wrong")
-                i++
-               }
+                await captureInput(null,null,null,f)
+                choice=await captureInput(null,null,o,null)
+                if (choice ==false){
+                    i++
+                }
+                break;
+            case 5:
+                await captureInput(null,null,null,f)
+                choice=await captureInput(null,null,o,null)
+                if (choice ==false){
+                    i++
+                }
                 break;
         
             default:
                 break;
         }
-        
-    }
+
+
+
+   
+
 }
+        
+
 
 runGame();

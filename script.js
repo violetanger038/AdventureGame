@@ -1,125 +1,14 @@
-
-
-function captureInput(x,y,I,scpt){
-    const user = document.getElementById(`gameInput`);
-    if (!user) return;
-    if (scpt == null){
-        user.addEventListener(`keydown`, (event) => {
-            if (event.key == `Enter`){
-                const input = user.value;
-                if (input == I){
-                    document.getElementById(`outputArea`).innerHTML = x;
-                    user.addEventListener(`keydown`, (event) => {
-                        if (event.key == `Enter`){
-                            document.getElementById(`outputArea`).innerHTML = " ";
-                            return true 
-                        }
-                    });
-                }
-                else{
-                    document.getElementById(`outputArea`).innerHTML = x;
-                    user.addEventListener(`keydown`, (event) => {
-                        if (event.key == `Enter`){
-                            document.getElementById(`outputArea`).innerHTML = " ";
-                            return true 
-                        }
-                    });
-                }
-                user.value = " ";
-            };
-        });
-    }
-    else{
-        document.getElementById(`outputArea`).innerHTML = scpt;
-        user.addEventListener(`keydown`, (event) => {
-            if (event.key == 'Enter'){
-                document.getElementById(`outputArea`).innerHTML = " ";
-            }
-        });
-    }
-}
-// game start variables
-let u = "Welcome"
-let t ="Please enter Start"
-let o ="Start"
-// Dm variables
-
-// Game Over Tracker
-let gameOver = false;
-// dialogue variables
-let f = "somthing"
-let g = "laugh"
-let h = "fifty"
-let b = "script"
-document.getElementById('outputArea').innerHTML = t;
-captureInput(u,t,o,null)
-// Act 1 sequence
-for (i=0; i===16;i++){
-    switch (i) {
-        case 0:
-            let choice = captureInput(g,h,f,null)
-            if (choice == true){
-                i++
-            }
-            break;
-        case 1:
-            choice = captureInput(g,h,f,null)
-            if (choice == true){
-                i++
-            }
-            
-            break;
-        case 2:
-            choice = captureInput(g,h,f,null)
-            if (choice == true){
-                i++
-            }
-            
-            break;
-        case 3:
-            
-            break;
-        case 4:
-            
-            break;
-        case 5:
-            
-            break;
-        case 6:
-            
-            break;
-        case 7:
-            
-            break;
-        case 8:
-            
-            break;
-        case 9:
-            
-            break;
-        case 10:
-            
-            break;
-        case 12:
-            
-            break;
-        case 13:
-            
-            break;
-        case 14:
-            
-            break;
-        case 15:
-            
-            break;
-        case 16:
-            
-            break;
-    
-        default:
-            break;
-    }
-}
-
-
-
+Act1 = [Intro,Intro2,Ch1,scptChA,scptChB,Ch2A,Ch2B]
+//Act1 dialogue
+const Intro ="You jolt up from your stone bed(one of the only things that furnish your 8X8 cell ). You look out the bars to see some prisioners run down the hall. You can't beleive your eyes; there has never been a riot in this prision. That is when he spoke. ";
+const Intro2 = " DM: 'I will grant freedom but you will have find three things: Justice,Mercy,and who you are.' \nYou: 'Who are you?' \nDM:'...'"
+const Ch1 ="With no answer from the mysterious voice you decide to try to get out of your cell. You observe the cell in which you notice that the magical rule above the door that previously made the door unopenable from the inside was gone.\nDo you: \n A: Inspect the lock\nB: Break down the door.";
+const scptChA =" ";
+const scptChB =" ";
+const Ch2A =" ";
+const Ch2B =" ";
+const uy =" ";
+const A =" ";
+const po =" ";
+const h =" ";
+export {Act1}

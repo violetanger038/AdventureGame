@@ -63,5 +63,6 @@ h1{
     background-color: rgba(25, 1, 42, 0.84);
     font-family: "Audiowide", sans-serif;
     font-size: 2vh;
+    word-wrap: break-word;
     color: azure;
 }
